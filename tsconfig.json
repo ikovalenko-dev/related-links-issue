@@ -1,0 +1,39 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "inlineSourceMap": true,
+        "allowSyntheticDefaultImports": true,
+        "alwaysStrict": true,
+        "downlevelIteration": true,
+        "emitDecoratorMetadata": true,
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "forceConsistentCasingInFileNames": true,
+        "moduleResolution": "Node",
+        "module": "commonjs",
+        "target": "es5",
+        "lib": [
+            "es2019",
+            "DOM"
+        ],
+        "jsx": "react",
+        "outDir": "./build",
+        // Production specific
+        "removeComments": true,
+        "sourceMap": false,
+        "watch": false,
+        // Checks
+        "allowUnreachableCode": false,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitReturns": true,
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "strictBindCallApply": true,
+        "strictFunctionTypes": true,
+        "strictNullChecks": true,
+        "strictPropertyInitialization": true
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}

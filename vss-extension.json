@@ -1,0 +1,45 @@
+{
+    "manifestVersion": 1,
+    "id": "relations-issue",
+    "publisher": "koniglabs",
+    "version": "1.0.0",
+    "name": "relations-issue",
+    "description": "Relations change issue demo",
+    "public": false,
+    "categories": [
+        "Azure Repos"
+    ],
+    "scopes": [
+        "vso.work"
+    ],
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services.Cloud"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "relations-issue",
+            "type": "ms.vss-work-web.work-item-form-group",
+            "description": "Relations issue demo form group",
+            "targets": [
+                "ms.vss-work-web.work-item-form"
+            ],
+            "properties": {
+                "name": "Relations issue",
+                "uri": "index.html"
+            }
+        }
+    ],
+    "files": [
+        {
+            "path": "index.html",
+            "addressable": true
+        },
+        {
+            "path": "dist",
+            "addressable": true,
+            "packagePath": "dist"
+        }
+    ]
+}
