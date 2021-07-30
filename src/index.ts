@@ -20,6 +20,9 @@ export async function main(): Promise<void> {
                 SDK
                     .getService<IWorkItemFormService>(WorkItemTrackingServiceIds.WorkItemFormService)
                     .then(service => service.getWorkItemRelations())
+                    /**
+                     * Expected behavior - current links count and output result from getWorkItemRelations return same count
+                     */
                     .then(relations => console.log(`current: ${changedFields['System.RelatedLinkCount']}`, `request result: ${relations.length}`))
                     .catch(error => console.error(error))
             },
